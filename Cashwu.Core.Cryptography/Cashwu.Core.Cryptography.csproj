@@ -2,10 +2,21 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <DebugType>full</DebugType>
+        <PackageId>Cashwu.Core.Cryptography</PackageId>
+        <PackageProjectUrl>https://github.com/cashwu/Cashwu.Core.Cryptography</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageDescription>C# Core Cryptography</PackageDescription>
+        <Version>1.0.0</Version>
+        <Company>cashwu</Company>
+        <AssemblyName>Cashwu.Core.Cryptography</AssemblyName>
+        <RootNamespace>Cashwu.Core.Cryptography</RootNamespace>
+        <Authors>cashwu</Authors>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+      <PackageReference Include="System.ValueTuple" Version="4.5.0" />
     </ItemGroup>
 
 </Project>
