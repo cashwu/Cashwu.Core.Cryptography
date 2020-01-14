@@ -22,7 +22,7 @@ jobs:
           token: ${{secrets.github_token}}
       - name: dotnet pack
         if: github.ref == 'refs/heads/master'
-        run: dotnet pack ./Cashwu.Core.Utility/Cashwu.Core.Utility.csproj -c Release -o ../release -p:PackageVersion=1.0.$BUILD_NUMBER
+        run: dotnet pack ./Cashwu.Core.Cryptography/Cashwu.Core.Cryptography.csproj -c Release -o ../release -p:PackageVersion=1.0.$BUILD_NUMBER
       - name: nuget publish
         if: github.ref == 'refs/heads/master'
         continue-on-error: true
